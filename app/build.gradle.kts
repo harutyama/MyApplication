@@ -49,7 +49,6 @@ dependencies {
     implementation("com.google.mlkit:text-recognition:16.0.0")
     implementation("com.google.mlkit:image-labeling:17.0.0")
 
-    // GAS通信（HTTPクライアント）
     implementation("com.squareup.okhttp3:okhttp:4.9.3")
 
     implementation(libs.androidx.core.ktx)

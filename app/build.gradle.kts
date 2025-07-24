@@ -11,10 +11,9 @@ android {
     defaultConfig {
         applicationId = "com.example.myapplication"
         minSdk = 24
-        targetSdk = 36
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
-
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -40,17 +39,10 @@ android {
 }
 
 dependencies {
-    // CameraX関連
-    implementation("androidx.camera:camera-camera2:1.2.3")
-    implementation("androidx.camera:camera-lifecycle:1.2.3")
-    implementation("androidx.camera:camera-view:1.2.3")
-
-    // ML Kit関連
-    implementation("com.google.mlkit:text-recognition:16.0.0")
-    implementation("com.google.mlkit:image-labeling:17.0.0")
-
-    implementation("com.squareup.okhttp3:okhttp:4.9.3")
-
+    implementation("androidx.camera:camera-camera2:1.5.0-beta02")
+    implementation("androidx.camera:camera-lifecycle:1.5.0-beta02")
+    implementation("androidx.camera:camera-view:1.5.0-beta02")
+    implementation("com.google.mlkit:text-recognition:16.0.1")
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
